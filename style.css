@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(145, 84, 202);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px dotted black;
+}
+
+article {
+    background-color: pink;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    
+}
+
+img.profile {
+    padding: 10px;
+    float: left;
+}
+
+footer {
+    background-color: rgb(94, 28, 155);
+    color: white;
+    display: block;
+    padding: 1rem;
+}
+
+section.works {
+    display: inherit;
+    flex-wrap: wrap;
+    flex-basis: 50rem;
+}
+
+section.profile {
+    display: inherit;
+    flex-wrap: wrap;
+}
+
+a:default {
+    color: rgb(26, 136, 170);
+}
+a:visited {
+    color: rgb(29, 194, 84);
+}
+a:active {
+    color: rgb(190, 46, 70);
+}
