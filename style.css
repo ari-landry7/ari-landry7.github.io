@@ -1,65 +1,143 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 1px;
-    background-color: rgb(255, 192, 202);
-}
+@media only screen and (min-width: 729px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 1px;
+        background-color: rgb(255, 192, 202);
+    }
 
-header {
-    background-color: rgb(145, 84, 202);
-    padding: 1rem;
-    text-align: center;
-    border-bottom: 2px dotted black;
-}
+    header {
+        background-color: rgb(145, 84, 202);
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 2px dotted black;
+    }
 
-article {
-    background-color: rgb(255, 192, 218);
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 1rem;
-}
 
-.profile-pic {
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    border-radius: 30%;
-    min-width: 150px;
-}
+    article {
+        background-color: rgb(255, 192, 218);
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+    }
 
-.project {
-    margin: 0px 0px 15px 0px;
-    min-width: 320px;
-}
+    .profile-pic {
+        float: left;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        border-radius: 30%;
+        min-width: 150px;
+        width: 40%;
+    }
 
-.works {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 150rem;
-    margin: 0px 0px 5px 5px;
-}
+    .project-pic {
+        margin: 0px 0px 15px 0px;
+        min-width: 320px;
+    }
 
-.profile {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px 5px 5px 0px;
-}
+    .works {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 150rem;
+        margin: 0px 0px 5px 5px;
+    }
 
-footer {
-    background-color: rgb(94, 28, 155);
-    color: white;
-    display: block;
-    padding: 1rem;
-    border-top: 2px dotted black;
-}
+    .profile {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 5px 5px 0px;
+    }
 
-a:default {
-    color: rgb(26, 136, 170);
+    footer {
+        background-color: rgb(94, 28, 155);
+        color: white;
+        display: block;
+        padding: 1rem;
+        border-top: 2px dotted black;
+    }
+
+    a:default {
+        color: rgb(26, 136, 170);
+    }
+    a:visited {
+        color: rgb(29, 194, 84);
+    }
+    a:active {
+        color: rgb(190, 46, 70);
+    }
 }
-a:visited {
-    color: rgb(29, 194, 84);
-}
-a:active {
-    color: rgb(190, 46, 70);
+@media (min-width: 320px) and (max-width: 728px) {
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 1px;
+        background-color: rgb(255, 192, 202);
+    }
+    
+    header {
+        background-color: rgb(145, 84, 202);
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 2px dotted black;
+    }
+
+    article {
+        background-color: rgb(255, 192, 218);
+        color: black;
+        display: block;
+        padding: 1rem;
+        align-content: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    
+    .profile-pic {
+        display: block;
+        margin-bottom: 0px;
+        border-radius: 30%;
+        min-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    
+    .project-pic {
+        display: block;
+        min-width: 320px;
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile {
+        margin: 10px;
+        align-items: center;
+    }
+
+    /*.works {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }*/
+    
+    footer {
+        background-color: rgb(94, 28, 155);
+        color: white;
+        display: block;
+        padding: 1rem;
+        border-top: 2px dotted black;
+    }
+    
+    a:default {
+        color: rgb(26, 136, 170);
+    }
+    a:visited {
+        color: rgb(29, 194, 84);
+    }
+    a:active {
+        color: rgb(190, 46, 70);
+    }
 }
