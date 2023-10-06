@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: -1px;
+    margin: 1px;
+    background-color: rgb(255, 192, 202);
 }
 
 header {
@@ -11,17 +12,38 @@ header {
 }
 
 article {
-    background-color: pink;
+    background-color: rgb(255, 192, 218);
     color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
     padding: 1rem;
-    
 }
 
-img.profile {
-    padding: 10px;
+.profile-pic {
     float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 30%;
+    min-width: 150px;
+}
+
+.project {
+    margin: 0px 0px 15px 0px;
+    min-width: 320px;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 150rem;
+    margin: 0px 0px 5px 5px;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 5px 5px 0px;
 }
 
 footer {
@@ -29,17 +51,7 @@ footer {
     color: white;
     display: block;
     padding: 1rem;
-}
-
-section.works {
-    display: inherit;
-    flex-wrap: wrap;
-    flex-basis: 50rem;
-}
-
-section.profile {
-    display: inherit;
-    flex-wrap: wrap;
+    border-top: 2px dotted black;
 }
 
 a:default {
