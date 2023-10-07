@@ -2,7 +2,7 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
         margin: 1px;
-        background-color: rgb(255, 192, 202);
+        background-color: rgb(250, 204, 223);
     }
 
     header {
@@ -14,50 +14,58 @@
 
 
     article {
-        background-color: rgb(255, 192, 218);
+        background-color: rgb(250, 204, 223);
         color: black;
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        padding: 1rem;
+        justify-content: flex-start;
+        align-items: baseline;
+        padding: 20px;
     }
 
     .profile-pic {
+        display: block;
         float: left;
-        margin-right: 15px;
-        margin-bottom: 0px;
+        margin-right: 1em;
+        margin-bottom: 1em;
         border-radius: 30%;
-        min-width: 200px;
+        min-width: 150px;
         width: 40%;
     }
 
     .project-pic {
-        margin: 0px 0px 15px 0px;
+        margin-bottom: 1em;
         min-width: 320px;
-    }
-
-    .works {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: 150rem;
-        margin: 0px 0px 5px 5px;
     }
 
     .profile {
         display: flex;
         flex-wrap: wrap;
+        margin: 0px 0px 5px 5px;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex: 1.6;
+        line-height: 1.4em;
+    }
+
+    .works {
+        display: flex;
+        flex-wrap: wrap;
         margin: 0px 5px 5px 0px;
+        align-items: flex-start;
+        flex: 1.8;
+        line-height: 1.4em;
     }
 
     footer {
-        background-color: rgb(94, 28, 155);
+        background-color: rgb(60, 40, 92);
         color: white;
         display: block;
         padding: 1rem;
         border-top: 2px dotted black;
     }
 
-    a:default {
+    a:link {
+        text-decoration: underline;
         color: rgb(26, 136, 170);
     }
     a:visited {
@@ -72,7 +80,7 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
         margin: 1px;
-        background-color: rgb(255, 192, 202);
+        background-color: rgb(250, 204, 223);
     }
     
     header {
@@ -83,7 +91,7 @@
     }
 
     article {
-        background-color: rgb(255, 192, 218);
+        background-color: rgb(250, 204, 223);
         color: black;
         display: block;
         padding: 1rem;
@@ -96,7 +104,7 @@
     
     .profile-pic {
         display: block;
-        margin-bottom: 0px;
+        margin-bottom: 1em;
         border-radius: 30%;
         min-width: 150px;
         margin-left: auto;
@@ -106,7 +114,7 @@
     
     .project-pic {
         display: block;
-        margin-bottom: 15px;
+        margin-bottom: 1em;
         margin-left: auto;
         margin-right: auto;
     }
@@ -114,21 +122,23 @@
     .profile {
         margin: 10px;
         align-items: center;
+        line-height: 1.4em;
     }
 
     .works {
         display: block;
+        line-height: 1.4em;
     }
     
     footer {
-        background-color: rgb(94, 28, 155);
+        background-color: rgb(60, 40, 92);
         color: white;
         display: block;
         padding: 1rem;
         border-top: 2px dotted black;
     }
     
-    a:default {
+    a:link {
         color: rgb(26, 136, 170);
     }
     a:visited {
