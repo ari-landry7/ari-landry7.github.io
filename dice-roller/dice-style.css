@@ -101,7 +101,7 @@
             align-items: center;
             position: fixed;
             bottom: 0;
-            width: 99.7%;
+            width: calc(100% - 5px);
             margin-bottom: 2px;
         }
 
