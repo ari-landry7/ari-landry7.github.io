@@ -1,64 +1,137 @@
-* {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-    header {
-        background-color:sienna;
-        padding: 3rem;
-        text-align: center;
-        font-size: 35px;
-        color: black;
-    }
-    body {
-        margin: 2px;
+@media only screen and (min-width: 729px) {
+    * {
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
-    nav {
-        background-color:burlywood;
-        padding: 1rem;
-        text-align: center;
-        font-size: 25px;
-        color: rgb(70, 26, 8);
-        line-height: 1.8em
+        header {
+            background-color:sienna;
+            padding: 3rem;
+            text-align: center;
+            font-size: 36px;
+            color: black;
+        }
+        body {
+            margin: 2px;
         }
 
-    footer {
-        background-color:cornflowerblue;
-        height: 2.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        nav {
+            background-color:burlywood;
+            padding: 1rem;
+            text-align: center;
+            font-size: 24px;
+            color: rgb(70, 26, 8);
+            line-height: 1.8em
+            }
+
+        footer {
+            background-color:cornflowerblue;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 99.7%;
+            margin-bottom: 2px;
+        }
+
+        article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        article button {
+            height: 2rem;
+            border-color: darkslategrey;
+            border-radius: 10%;
+            color:rgb(26, 38, 104);
+            padding: 10px;
+            background-color:aliceblue;
+            text-wrap: wrap;
+            margin: .5em;
+        }
+
+        article p {
+            padding: .5em;
+            color: rgb(26, 38, 104);
+        }
+
+        .dice {
+            display: flex;
+            align-items: center;
+        }
+}
+
+@media (min-width: 320px) and (max-width: 728px) {
+    * {
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
-    article {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-        padding-bottom: 3rem;
-        flex-wrap: wrap;
-    }
+        header {
+            background-color:sienna;
+            padding: 1em;
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            line-height: 2em;
+            
+        }
+        body {
+            margin: 2px;
+        }
 
-    article button {
-        height: 2rem;
-        border-color: darkslategrey;
-        border-radius: 10%;
-        color:rgb(26, 38, 104);
-        padding: 10px;
-        background-color:aliceblue;
-        text-wrap: wrap;
-        margin: .5em;
-    }
+        nav {
+            background-color:burlywood;
+            padding: .5rem;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(70, 26, 8);
+            line-height: 1.4em
+            }
 
-    article p {
-        padding: .5em;
-        color: rgb(26, 38, 104);
-    }
+        footer {
+            background-color:cornflowerblue;
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 99.7%;
+            margin-bottom: 2px;
+        }
 
-    .dice {
-        display: flex;
-        align-items: center;
-    }
+        article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        article button {
+            height: 2rem;
+            border-color: darkslategrey;
+            border-radius: 10%;
+            color:rgb(26, 38, 104);
+            padding: 10px;
+            background-color:aliceblue;
+            text-wrap: wrap;
+            margin: .5em;
+        }
+
+        article p {
+            padding: .5em;
+            color: rgb(26, 38, 104);
+        }
+
+        .dice {
+            display: flex;
+            align-items: center;
+        }
+}
