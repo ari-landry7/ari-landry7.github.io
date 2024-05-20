@@ -2,11 +2,11 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
         margin: 0px;
-        background-color: rgb(250, 204, 223);
+        background-color: #978fd4;
     }
 
     header {
-        background-color: rgb(145, 84, 202);
+        background-color: #5b4dc3;
         padding: 1rem;
         text-align: center;
         border-bottom: 2px dotted black;
@@ -14,7 +14,7 @@
 
 
     article {
-        background-color: rgb(250, 204, 223);
+        background-color: #978fd4;
         color: black;
         display: flex;
         justify-content: flex-start;
@@ -57,7 +57,7 @@
     }
 
     footer {
-        background-color: rgb(60, 40, 92);
+        background-color: #261c71;
         color: white;
         display: block;
         padding: 1rem;
@@ -66,13 +66,13 @@
 
     a:link {
         text-decoration: underline;
-        color: rgb(26, 136, 170);
+        color: rgb(28, 82, 199);
     }
     a:visited {
-        color: rgb(29, 194, 84);
+        color: rgb(221, 24, 228);
     }
     a:active {
-        color: rgb(190, 46, 70);
+        color: rgb(240, 30, 117);
     }
 }
 @media (min-width: 320px) and (max-width: 728px) {
@@ -80,18 +80,18 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
         margin: 0px;
-        background-color: rgb(250, 204, 223);
+        background-color: #978fd4;
     }
     
     header {
-        background-color: rgb(145, 84, 202);
+        background-color: #5b4dc3;
         padding: 1rem;
         text-align: center;
         border-bottom: 2px dotted black;
     }
 
     article {
-        background-color: rgb(250, 204, 223);
+        background-color: #978fd4;
         color: black;
         display: block;
         padding: 1rem;
@@ -131,7 +131,7 @@
     }
     
     footer {
-        background-color: rgb(60, 40, 92);
+        background-color: #261c71;
         color: white;
         display: block;
         padding: 1rem;
@@ -139,12 +139,12 @@
     }
     
     a:link {
-        color: rgb(26, 136, 170);
+        color: rgb(28, 82, 199);
     }
     a:visited {
-        color: rgb(29, 194, 84);
+        color: rgb(221, 24, 228);
     }
     a:active {
-        color: rgb(190, 46, 70);
+        color: rgb(240, 30, 117);
     }
 }
