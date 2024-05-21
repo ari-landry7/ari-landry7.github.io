@@ -1,0 +1,41 @@
+@media only screen and (min-width: 729px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: large;
+    }
+
+    #calculator {
+        display: flex;
+        align-content:space-between;
+    }
+
+    #result {
+        align-content: center;
+        border: 2px solid black;
+        width: 240px;
+    }
+
+    tr {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+
+    td {
+        width: 80px;
+        font-size: large;
+    }
+
+    input {
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+        font-size: large;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 728px) {
+
+}
