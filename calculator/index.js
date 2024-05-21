@@ -3,7 +3,7 @@ const swaggerUi = require('swagger-ui-express')
 swaggerDocument = require('./swagger.json')
 const app = express()
 require("dotenv").config();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT
 
 app.use(express.json())
 app.use(
@@ -12,11 +12,11 @@ app.use(
     swaggerUi.setup(swaggerDocument)
 );
 
-const calculatorRoutes = require('./routes/calculatorRoutes')
+const calculatorRoutes = require('./calculator/routes/calculatorRoutes')
 
 app.use('/', express.static('public'))
 app.use('/calculator', calculatorRoutes)
 
 app.listen(PORT, ()=>{
-    console.log(`Example app listening at http://localhost:${PORT}`)
+    console.log(`App listening at http://localhost:${PORT}`)
 })
