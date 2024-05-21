@@ -14,7 +14,7 @@ app.use(
 
 const calculatorRoutes = require('./calculator/routes/calculatorRoutes')
 
-app.use('/', express.static('public'))
+app.use('/', express.static('/public'))
 app.use('/calculator', calculatorRoutes)
 
 app.listen(PORT, ()=>{

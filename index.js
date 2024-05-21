@@ -12,10 +12,10 @@ app.use(
     swaggerUi.setup(swaggerDocument)
 );
 
-const calculatorRoutes = require('./calculator/routes/calculatorRoutes')
+const calculatorRoutes = require('./public/calculator/routes/calculatorRoutes')
 
 app.use('/', express.static('index.html'))
-app.use('/calculator', express.static('public'))
+app.use('/calculator', express.static('/public'))
 app.use('/calculator', calculatorRoutes)
 
 app.listen(PORT, ()=>{
