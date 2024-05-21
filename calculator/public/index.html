@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <table id="calculator">
+        <tr>
+            <td colspan="3" id="result"></td>
+            <td><input type="button" value="reset" onclick="reset()"></input></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="display('1')"> </td>
+            <td><input type="button" value="2" onclick="display('2')"> </td>
+            <td><input type="button" value="3" onclick="display('3')"> </td>
+            <td><input type="button" value="+" onclick="display('+')"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="display('4')"> </td>
+            <td><input type="button" value="5" onclick="display('5')"> </td>
+            <td><input type="button" value="6" onclick="display('6')"> </td>
+            <td><input type="button" value="-" onclick="display('-')"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="display('7')"> </td>
+            <td><input type="button" value="8" onclick="display('8')"> </td>
+            <td><input type="button" value="9" onclick="display('9')"> </td>
+            <td><input type="button" value="*" onclick="display('*')"> </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input id="zero" type="button" value="0" onclick="display('0')"></td>
+            <td><input type="button" value="/" onclick="display('/')"></td>
+            <td><input type="button" value="=" onclick="solve()"></td>
+    </table>
+</body>
+<script>
+    function display(val) {
+        console.log(val)
+        document.getElementById("result").innerHTML += val
+        return val
+    }
+
+    function solve() {
+        let displayVal = document.getElementById("result").innerHTML
+        // console.log(displayVal)
+        let operator
+        for (char of displayVal) {
+            if (char === '+') operator = char
+            else if (char === '-') operator = char
+            else if (char === '*') operator = char
+            else if (char === '/') operator = char
+        }
+        const numbers = displayVal.split(operator)
+        // console.log(myArray)
+        let num1 = numbers[0]
+        let num2 = numbers[1]
+
+        if (operator === '+') {
+            fetch(`/calculator/add?num1=${num1}&num2=${num2}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("result").innerHTML = data.result;
+                    console.log(`${num1} + ${num2} = ${data.result}`)
+            })
+        } else if (operator === '-') {
+            fetch(`/calculator/subtract?num1=${num1}&num2=${num2}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("result").innerHTML = data.result;
+                    console.log(`${num1} - ${num2} = ${data.result}`)
+            }) 
+        } else if (operator === '*') {
+            fetch(`/calculator/multiply?num1=${num1}&num2=${num2}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("result").innerHTML = data.result;
+                    console.log(`${num1} * ${num2} = ${data.result}`)
+            }) 
+        } else if (operator === '/') {
+            fetch(`/calculator/divide?num1=${num1}&num2=${num2}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("result").innerHTML = data.result;
+                    console.log(`${num1} / ${num2} = ${data.result}`)
+            }) 
+        }
+    }
+
+    function reset() {
+        document.getElementById("result").innerHTML = ''
+    } 
+</script>
+</html>
