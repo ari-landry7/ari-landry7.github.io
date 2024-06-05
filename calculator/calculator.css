@@ -1,0 +1,99 @@
+@media only screen and (min-width: 729px) {
+    #result {
+        margin: 1rem;
+        border: 2px solid black;
+    }
+
+    #zero {
+        width: 16.3rem;
+    }
+
+    input {
+        font-size: 2rem;
+        color: white;
+        align-content: stretch;
+        width: 8rem;
+        height: 6rem;
+        background-color: darkslateblue;
+    }
+
+    body {
+        font-size: 2.5rem;
+        background-color: rgb(202, 186, 245);
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin: .5rem;
+    }
+
+    #body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .center{
+        justify-content: center;
+        text-align: center;
+    }
+
+    a:link {
+        color: darkslateblue;
+    }
+    a:visited {
+        color: rgb(221, 24, 228);
+    }
+    a:active {
+        color: rgb(240, 30, 117);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 728px) {
+    #result {
+        margin: .5rem;
+        border: 2px solid black;
+    }
+
+    #zero {
+        width: 6.3rem;
+    }
+
+    input {
+        font-size: 1rem;
+        color: white;
+        align-content: stretch;
+        width: 3rem;
+        height: 2rem;
+        background-color: darkslateblue;
+    }
+
+    body {
+        font-size: 1rem;
+        background-color: rgb(202, 186, 245);
+    }
+
+    h1 {
+        font-size: 1rem;
+        margin: .5rem;
+    }
+
+    #body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .center{
+        justify-content: center;
+        text-align: center;
+    }
+
+    a:link {
+        color: darkslateblue;
+    }
+    a:visited {
+        color: rgb(221, 24, 228);
+    }
+    a:active {
+        color: rgb(240, 30, 117);
+    }
+}
