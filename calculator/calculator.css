@@ -53,12 +53,12 @@
     #result {
         margin: .5rem;
         border: 2px solid black;
-        width: 9.3rem;
+        max-width: 12.3rem;
         overflow: auto;
     }
 
     #zero {
-        width: 6.3rem;
+        width: 8.3rem;
     }
 
     input {
