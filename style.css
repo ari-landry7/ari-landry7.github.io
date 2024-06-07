@@ -106,7 +106,7 @@
         display: block;
         margin-bottom: 1em;
         border-radius: 30%;
-        min-width: 200px;
+        min-width: 150px;
         margin-left: auto;
         margin-right: auto;
         width: 70%;
@@ -117,6 +117,7 @@
         margin-bottom: 1em;
         margin-left: auto;
         margin-right: auto;
+        width: 80%;
     }
 
     .profile {
