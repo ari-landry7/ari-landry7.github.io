@@ -53,6 +53,7 @@
     #result {
         margin: .5rem;
         border: 2px solid black;
+        width: 9.3rem;
         overflow: auto;
     }
 
