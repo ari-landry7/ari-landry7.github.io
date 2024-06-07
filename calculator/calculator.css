@@ -2,6 +2,7 @@
     #result {
         margin: 1rem;
         border: 2px solid black;
+        overflow: auto;
     }
 
     #zero {
@@ -52,6 +53,7 @@
     #result {
         margin: .5rem;
         border: 2px solid black;
+        overflow: auto;
     }
 
     #zero {
